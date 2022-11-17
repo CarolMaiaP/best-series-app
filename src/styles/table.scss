@@ -16,11 +16,16 @@ table {
   tbody {
     td {
       text-align: center;
+      padding: 0.5rem;
 
       .actions {
         display: flex;
         justify-content: center;
         gap: 1.5rem;
+
+        #file {
+          cursor: pointer;
+        }
 
         #pencil {
           cursor: pointer;

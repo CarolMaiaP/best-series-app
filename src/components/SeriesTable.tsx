@@ -1,4 +1,4 @@
-import { Pencil, Trash } from "phosphor-react"
+import { File, Pencil, Trash } from "phosphor-react"
 import "../styles/table.scss"
 
 export function SeriesTable(){
@@ -22,7 +22,9 @@ export function SeriesTable(){
             <td>5 Seasons</td>
             <td>
               <div className="actions">
-                <Pencil id="pencil" size={25} /><Trash id="trash" size={25} />
+                <File id="file" size={25} />
+                <Pencil id="pencil" size={25} />
+                <Trash id="trash" size={25} />
               </div>
             </td>
           </tr>
