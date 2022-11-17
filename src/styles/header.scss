@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #45443f;
+  padding: 0.7rem 8rem;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  button.createNew {
+    background-color: #3b7db5;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #418bca;
+    }
+  }
+}
