@@ -1,0 +1,36 @@
+table {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+
+  thead {
+    background: #2f2e2e;
+    color: #fff;
+
+    tr {
+      th {
+        padding: 0.7rem;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      text-align: center;
+
+      .actions {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+
+        #pencil {
+          cursor: pointer;
+        }
+
+        #trash {
+          color: #e62525;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
