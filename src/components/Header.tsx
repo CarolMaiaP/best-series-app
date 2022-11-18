@@ -14,7 +14,7 @@ export function Header(){
         </a>
         <button onClick={() => setOpenModal(true)} className="createNew">Create new</button>
       </header>
-      {openModal && <NewSerieForm/>}
+      {openModal && <NewSerieForm closeModal={setOpenModal}/>}
     </>
   )
 }
