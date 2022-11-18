@@ -25,5 +25,22 @@
       outline: none;
       margin-bottom: 0.8rem;
     }
+
+    button {
+      padding: 0.7rem;
+      color: #fff;
+      background: #3b7db5;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s;
+      margin-top: 0.1rem;
+
+      &:hover {
+        background-color: #418bca;
+      }
+    }
   }
 }

@@ -14,6 +14,7 @@ export function NewSerieForm({closeModal}:any){
           <input id="genre" type="text" placeholder="Serie Genre" />
           <label htmlFor="season">Season</label>
           <input id="season" type="text" placeholder="Season" />
+          <button type="submit">Criar</button>
         </form>
     </div>
     </div>
