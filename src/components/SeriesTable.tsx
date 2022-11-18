@@ -1,7 +1,11 @@
 import { File, Pencil, Trash } from "phosphor-react"
 import "../styles/table.scss"
+import { ViewSerieInfo } from "./ViewSerieInfo"
+import { useState } from 'react';
 
 export function SeriesTable(){
+  const [ openFile, setOpenFile ] = useState(false)
+
   return(
     <main className="series-table">
       <table>
@@ -22,7 +26,7 @@ export function SeriesTable(){
             <td>5 Seasons</td>
             <td>
               <div className="actions">
-                <File id="file" size={25} />
+                <File onClick={() => setOpenFile(true)} id="file" size={25} />
                 <Pencil id="pencil" size={25} />
                 <Trash id="trash" size={25} />
               </div>
@@ -30,6 +34,8 @@ export function SeriesTable(){
           </tr>
         </tbody>
       </table>
+
+      {openFile && <ViewSerieInfo openModalInfo={setOpenFile}/>}
     </main>
   )
 }

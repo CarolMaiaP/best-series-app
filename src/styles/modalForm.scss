@@ -1,49 +1,29 @@
-.modal-background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+.modal {
+  h2 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+    color: #fff;
 
-  .modal-form {
-    text-align: 0;
-    min-width: 32rem;
-    border-radius: 6px;
-    padding: 2.5rem 3rem;
-    background: #3b7db5;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    span {
+      cursor: pointer;
+    }
+  }
 
-    h2 {
-      display: flex;
-      /* align-items: center; */
-      justify-content: space-between;
-      margin-bottom: 1.3rem;
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
       color: #fff;
-
-      span {
-        cursor: pointer;
-      }
+      margin-bottom: 0.1rem;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-
-      label {
-        color: #fff;
-        margin-bottom: 0.1rem;
-      }
-
-      input {
-        padding: 0.5rem 0.1rem;
-        outline: none;
-        margin-bottom: 0.8rem;
-      }
+    input {
+      padding: 0.5rem 0.1rem;
+      outline: none;
+      margin-bottom: 0.8rem;
     }
   }
 }
